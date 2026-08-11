@@ -1,15 +1,214 @@
-<div class="card">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLIKVIRAL - Produk Pilihan</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f5f7fb;
+  color:#222;
+}
+
+header{
+  background:linear-gradient(135deg,#111827,#2563eb);
+  color:white;
+  padding:28px 18px;
+  text-align:center;
+}
+
+.logo{
+  font-size:32px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+header p{
+  margin-top:8px;
+  font-size:15px;
+  opacity:.9;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:25px 15px;
+}
+
+.hero{
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  margin-bottom:25px;
+}
+
+.hero h1{
+  font-size:25px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#666;
+  line-height:1.6;
+}
+
+.produk{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+.icon{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.card h2{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#666;
+  line-height:1.5;
+  min-height:70px;
+}
+
+.btn{
+  display:block;
+  margin-top:18px;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+  padding:13px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:#1d4ed8;
+}
+
+.info{
+  margin-top:25px;
+  background:#fff7ed;
+  border-radius:15px;
+  padding:20px;
+  text-align:center;
+  line-height:1.6;
+}
+
+footer{
+  margin-top:35px;
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:22px 15px;
+  font-size:14px;
+}
+
+@media(max-width:500px){
+  .logo{
+    font-size:27px;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">KLIKVIRAL</div>
+  <p>Temukan produk pilihan yang menarik dan bermanfaat</p>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h1>🛍️ Produk Pilihan KLIKVIRAL</h1>
+    <p>
+      Kami memilih berbagai produk menarik untuk membantu kamu
+      menemukan barang yang mungkin kamu butuhkan.
+    </p>
+  </section>
+
+  <section class="produk">
+
+    <div class="card">
       <div class="icon">⭐</div>
-      <h2>Produk Pilihan #3</h2>
-      <p>Pilihan menarik untuk kebutuhan sehari-hari.</p>
-      <a class="btn" href="#" target="_blank">🛒 Lihat Produk</a>
+      <h2>Produk Pilihan #1</h2>
+      <p>
+        Produk menarik dengan harga yang terjangkau.
+        Klik tombol di bawah untuk melihat produknya.
+      </p>
+      <a class="btn" href="#" target="_blank">
+        Lihat Produk
+      </a>
     </div>
 
+    <div class="card">
+      <div class="icon">🔥</div>
+      <h2>Produk Pilihan #2</h2>
+      <p>
+        Pilihan populer yang bisa menjadi pertimbangan
+        sebelum kamu membeli.
+      </p>
+      <a class="btn" href="#" target="_blank">
+        Lihat Produk
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">💎</div>
+      <h2>Produk Pilihan #3</h2>
+      <p>
+        Temukan produk menarik lainnya melalui
+        tombol di bawah.
+      </p>
+      <a class="btn" href="#" target="_blank">
+        Lihat Produk
+      </a>
+    </div>
+
+  </section>
+
+  <div class="info">
+    💡 <strong>Tips:</strong><br>
+    Sebelum membeli, selalu periksa harga, ulasan,
+    rating, dan deskripsi produk terlebih dahulu.
   </div>
-</div>
+
+</main>
 
 <footer>
-  © 2026 KLIKVIRAL — Produk Pilihan untuk Anda
+  © 2026 KLIKVIRAL — Produk Pilihan
 </footer>
 
 </body>
